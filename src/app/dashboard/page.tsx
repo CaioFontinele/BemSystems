@@ -12,7 +12,6 @@ import Banner from '../../components/Banner'
 
 export default function dashboard(){
     return <div className='overflow-hidden'>
-        
         <Banner />
         <Informations01 />  
         <ServicosOF />  
