@@ -1,4 +1,4 @@
-import Navbar from "./Navbar"
+import TopBanner from '../app/assets/Banner.png'
 
 
 
@@ -6,9 +6,15 @@ import Navbar from "./Navbar"
 
 const Banner = () => {
   return (
-    <div className="bg-black-300 flex items-center justify-center h-96 bg-[url(../app/assets/Banner2.png)] bg-cover">
-        <Navbar />
+    <div className="max-w-full">
+      
+      <img src={TopBanner.src} className='-mt-20'/>
+      
+      
+              
+
     </div>
+    
   )
 }
 

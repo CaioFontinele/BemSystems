@@ -1,77 +1,50 @@
-import Face from '../app/assets/face_footer.png'
-import Insta from '../app/assets/insta_footer.png'
-import Logo from '../app/assets/logo_footer.png'
-import Whats from '../app/assets/whats_footer.png'
-import Map from '../components/Map'
+import facebookLogo from '../app/assets/face_footer.png'
+import instagramLogo from '../app/assets/insta_footer.png'
+import logo from '../app/assets/logo_footer.png'
+import whatsappLogo from '../app/assets/whats_footer.png'
+import Map from './Map'
 
 
 const Footer = () => {
   return (
     <div>
-        <div className="flex items-center justify-center mt-32 bg-orange-750 font-Thasadith text-lg text-black-50">
-            Onde nos localizamos 
-        </div>
-
+      <div>
+        <span className='flex items-center justify-center mt-20 p-2 font-Thasadith text-xl text-black-50 bg-orange-450'>Onde nos localizamos</span>
         <Map />
-
-        <div className='bg-orange-750'>
-
-          <div className='grid grid-cols-2 text-black-50 gap-48'>
-
-            {/* Esquerdo */}
-            <div className='flex flex-col items-center mr-56 justify-start  mt-12 mb-9 '>
-              <div>
-                <img src={Logo.src}></img>
-              </div>
-
-              <span className='mt-4 flex flex-col items-center font-Thasadith'>
-                CNPJ: 51.578.801/0001-70 © 2023<p/>Todos os direitos reservados
-              </span>
-
-              <div className='grid grid-cols-3 gap-5 mt-5 px-11'>
-                <img src={Insta.src} />
-                <img src={Whats.src} />
-                <img src={Face.src} />
-              </div>
-            </div>
+      </div>
 
 
-            {/* Direito */}
-            <div className='grid grid-cols-3 gap-9 items-center font-Thasadith mr-10 '>
-
-              <div className='flex flex-col justify-center items-center w-50 h-56 bg-orange-350'>
-                <h1 className='font-Thasadith text-2xl'>Termos e condições</h1>
-                <div className='underline-custom-white w-40 flex items-center justify-center mx-auto mt-1' />
-                  <span className='text-center text-sm mt-4'>
-                    É de extrema importância a leitura e compreensão dos nossos termos  
-                  </span>
-              </div>
-
-              <div className='flex flex-col justify-center items-center w-50 h-56 px-8 bg-orange-350'>
-                <h1 className='font-Thasadith text-2xl'>Endereço</h1>
-                <div className='underline-custom-white w-16 flex items-center justify-center mx-auto mt-1' />
-                  <span className='flex flex-col text-sm justify-center items-center mt-4 w-52'>
-                    Rua Nossa Senhora da Conceição<p/> 
-                    N* 5656<p/> 
-                    Bairro: Toca da onça<p/>
-                  </span>
-              </div>
-
-              <div className='flex flex-col justify-center items-center w-50 h-56 bg-orange-350'>
-                <h1 className='font-Thasadith text-2xl'>Contato</h1>
-                <div className='underline-custom-white w-14 flex items-center justify-center mx-auto mt-1' />
-                  <span className='mt-4 flex flex-col text-sm justify-center items-center'>
-                    email@bemsystems.com.br<p/>
-                    Telefones:<p/>
-                    086 9 8899-8989<p/>
-                    086 9 8899-8989<p/>
-                    086 9 8899-8989<p/>
-                  </span>
-              </div>
-
-            </div>
+      <footer className="footer p-10 bg-orange-450 text-base-content">
+        <aside className='flex items-center justify-center flex-col'>
+          <img src={logo.src}/>
+          <p>BEMsystems Industries Ltd.<br/>Providing reliable tech since 2023</p>
+          <div className='grid grid-cols-3 gap-5'>
+            <div> <img src={instagramLogo.src} /> </div>
+            <div> <img src={facebookLogo.src} /> </div>
+            <div> <img src={whatsappLogo.src}/> </div>
           </div>
-        </div>
+        </aside> 
+        <nav>
+          <header className="footer-title">Services</header> 
+          <a className="link link-hover">Branding</a> 
+          <a className="link link-hover">Design</a> 
+          <a className="link link-hover">Marketing</a> 
+          <a className="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <header className="footer-title">Company</header> 
+          <a className="link link-hover">About us</a> 
+          <a className="link link-hover">Contact</a> 
+          <a className="link link-hover">Jobs</a> 
+          <a className="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <header className="footer-title">Legal</header> 
+          <a className="link link-hover">Terms of use</a> 
+          <a className="link link-hover">Privacy policy</a> 
+          <a className="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
     </div>
   )
 }

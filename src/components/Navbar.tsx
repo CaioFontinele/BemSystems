@@ -1,8 +1,9 @@
+import Logo2 from '../app/assets/Logo_monocromatico.png'
 import Logo from '../app/assets/logo_navbar.png'
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-black-800 opacity-80 -mt-[20em] rounded-3xl">
+    <div className="navbar bg-black-800 opacity-80 rounded-3xl bg-none font-Thasadith font-bold">
       
       <div className="navbar-start">
         <div className="drawer flex transition-all duration-500">
@@ -18,10 +19,11 @@ const Navbar = () => {
 
           <div className="drawer-side">
             <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-            <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+            <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content text-lg">
               {/* Sidebar content here */}
+              <img src={Logo2.src} className='mb-10 mt-5'/>
               <li><a className='hover:bg-orange-500 hover:text-black-900'>Quem somos</a></li>
-              <li><a className='hover:bg-orange-500 hover:text-black-900'>serviços</a></li>
+              <li><a className='hover:bg-orange-500 hover:text-black-900'>Serviços</a></li>
               <li><a className='hover:bg-orange-500 hover:text-black-900'>Destaques</a></li>
               <li><a className='hover:bg-orange-500 hover:text-black-900'>Espaços</a></li>
             </ul>
@@ -31,13 +33,15 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end  sm:hidden md:flex lg:flex max-sm:hidden">
-        <ul className="menu menu-horizontal px-1 flex-nowrap">
+        <ul className="menu menu-horizontal px-1 flex-nowrap text-lg">
           <li><a className='hover:bg-orange-500 hover:text-black-900'>Quem somos</a></li>
-          <li><a className='hover:bg-orange-500 hover:text-black-900'>serviços</a></li>
+          <li><a className='hover:bg-orange-500 hover:text-black-900'>Serviços</a></li>
           <li><a className='hover:bg-orange-500 hover:text-black-900'>Destaques</a></li>
           <li><a className='hover:bg-orange-500 hover:text-black-900'>Espaços</a></li>
         </ul>
       </div>
+
+      
 
     </div>
   )

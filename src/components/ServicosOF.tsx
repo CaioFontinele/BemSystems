@@ -7,8 +7,8 @@ import Motivo04 from '../app/assets/Motivo_04.png'
 const ServicosOF = () => {
   return (
     <div>
-        <div className="flex items-center justify-center mt-7 max-sm:mb-40">
-            <div className="w-[1590px] h-[467px] relative text-black-900 container mx-20 sm:mb-20">
+        <div className="flex items-center justify-center mt-10 max-sm:mb-40">
+            <div className="w-[1000px] h-[467px] relative text-black-900 container mx-20 sm:mb-20">
                 
                 <div className="text-center text-black text-4xl font-sans font-bold">Aproveite uma hospedagem mais completa </div>
 
@@ -17,7 +17,7 @@ const ServicosOF = () => {
                 
 
 
-                <div className="grid grid-cols-4 gap-4 mt-5 max-md:grid max-md:grid-cols-4 max-sm:grid-cols-4 max-sm:hidden ">
+                <div className="grid grid-cols-4 gap-5 mt-5 max-md:grid max-md:grid-cols-4 max-sm:grid-cols-4 max-sm:hidden ">
 
                   <div className="carousel-item relative w-full">
                     <img src={Motivo01.src} className="w-full" />
