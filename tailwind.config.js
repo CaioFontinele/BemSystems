@@ -29,6 +29,8 @@ module.exports = {
         'gradient-conic':
         'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'info-texture': "url('../app/assets/bgInfos.png')",
+        'hero-image': "url('../app/assets/Banner.png')",
+        'logo-banner': "url('../app/assets/Logo_monocromatico.png')",
       },
     },
 
@@ -44,6 +46,8 @@ module.exports = {
     borderWidth: {
       '1': '3px'
     },
+
+    
 
      colors: {
         black: {
